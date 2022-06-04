@@ -28,7 +28,7 @@ return a * b;
 * Basic networks
 * Photoshop CS
 
-# Educaion:
+# Education:
 
 Far East State Transportation University
 
