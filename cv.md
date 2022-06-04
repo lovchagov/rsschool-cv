@@ -26,7 +26,8 @@ return a * b;
 * CSS
 * Git and Github
 * Basic networks
-* Photoshop CS
+* Photoshop 
+* Lightroom
 
 # Education:
 
