@@ -1,1 +1,1 @@
-# rsschool-cv
+lovchagov.github.io/rsschool-cv/
