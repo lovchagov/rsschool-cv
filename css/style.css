@@ -107,7 +107,7 @@ header {
 	background-color: rgbA(219,85,214,0.2);
 	border-radius: 15px;
 	padding-top: 1em;
-	max-width: 1016px;
+	width: 1016px;
 	margin: 0 auto;
 	padding-bottom: 15px;
 	margin-bottom: 50px;
@@ -134,7 +134,7 @@ header {
 
 main {
 	padding-top: 1em;
-	max-width: 1016px;
+	width: 1016px;
 	margin: 0 auto;
 }
 
@@ -205,12 +205,13 @@ h2 {
 .grid__start {
 	display: grid;
 	grid-template-columns: 1fr 3fr;
-	grid-template-rows: auto auto 1fr 3fr;
+	grid-template-rows: auto auto auto auto auto;
 	grid-template-areas: 
 	"skills code"
 	"education code"
 	"language portfolio"
-	"contacts portfolio";
+	"contacts portfolio"
+	"contacrs portfolio";
 }
 
 /*----------SKILLS----------*/
@@ -222,7 +223,7 @@ h2 {
 
 .skills__row {}
 
-.skills__title {
+h3 {
 	font-weight: 700;
 	font-size: 40px;
 	line-height: 94.97%;
@@ -273,13 +274,6 @@ h2 {
 	padding-bottom: 20px;
 }
 
-.education__title {
-	font-weight: 700;
-	font-size: 40px;
-	line-height: 94.97%;
-	padding-bottom: 36px;
-}
-
 .education__item {
 	width: 684px;
 	font-size: 18px;
@@ -291,17 +285,11 @@ h2 {
 	padding-bottom: 0;
 }
 
-.section__code {
+.code {
 	grid-area: code;
 	padding-left: 60px;
 }
 
-.code__title {
-	font-weight: 700;
-	font-size: 40px;
-	line-height: 94.97%;
-	padding-bottom: 36px;
-}
 
 .code__code {
 	width: 684px;
@@ -315,12 +303,6 @@ h2 {
 	padding-left: 60px;
 }
 
-.portfolio__title {
-	font-weight: 700;
-	font-size: 40px;
-	line-height: 94.97%;
-	padding-bottom: 36px;
-}
 
 .porfolio__item {}
 
@@ -345,7 +327,7 @@ h2 {
 
 .portfolio__image img {
 	border: 1px solid #20ecc3;
-	width: 700px;
+	width: 650px;
 	border-radius: 20px;
 
 }
@@ -358,12 +340,7 @@ h2 {
 	grid-area: language;
 
  }
-.language__title { 
-	font-weight: 700;
-	font-size: 40px;
-	line-height: 94.97%;
-	padding-bottom: 36px;
-}
+
 .language__text {
 	font-size: 18px;
 	line-height: 30px;
@@ -375,12 +352,6 @@ h2 {
 
  }
 
-.contacts__title {
-	font-weight: 700;
-	font-size: 40px;
-	line-height: 94.97%;
-	padding-bottom: 36px;
- }
 .contacts__text{ 
 	font-size: 18px;
 	line-height: 30px;
@@ -388,4 +359,23 @@ h2 {
 
 .contacts__text ul li a img{ 
 	width: 30px;
+}
+
+.contacts__text ul li img{ 
+	width: 30px;
+}
+
+footer {
+	font-size: 24px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgbA(62,232,196,0.2);
+	border-radius: 15px;
+	max-width: 1016px;
+	margin: 0 auto;
+}
+
+footer a img{
+	width: 50px;
 }
