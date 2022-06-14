@@ -120,6 +120,10 @@ header {
 	align-items: center;
 }
 
+.nav_menu ul li a{
+	color: black;
+}
+
 .nav_menu ul li a:visited {
 	color: black;
 }
