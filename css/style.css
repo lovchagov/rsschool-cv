@@ -94,13 +94,23 @@ h6 {
 body {
 	font-family: 'Inter', sans-serif;
 	background-color: #E5E5E5;
+	background-image: url('img/Shape.svg');
+	background-repeat: no-repeat;
+	background-position: 75% 0px;
+	background-attachment: scroll;
+
 }
 
+/*----------HEADER----------*/
+
 header {
+	background-color: rgbA(219,85,214,0.2);
+	border-radius: 15px;
 	padding-top: 1em;
-	width: 70%;
+	max-width: 1016px;
 	margin: 0 auto;
 	padding-bottom: 15px;
+	margin-bottom: 50px;
 }
 
 .nav_menu ul {
@@ -116,37 +126,266 @@ header {
 
 .nav_menu ul li a:hover {
 	background: linear-gradient(45deg, #20ecc3 33%, #f10fd5 66%, #8AA9D6);
-	 -webkit-background-clip: text;
-	 -webkit-text-fill-color: transparent;
-	}
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+	/*----------HEADER END----------*/
+}
 
 main {
 	padding-top: 1em;
-	width: 70%;
+	max-width: 1016px;
 	margin: 0 auto;
 }
 
-.name {}
 
-.name__row {}
+/*----------NAME----------*/
+
+.name__wrap {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	max-width: 1016px;
+}
+
+.name {
+	padding-bottom: 20px;
+}
+
+
+.name__text {
+	width: 684px;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.name__row {
+	display: flex;
+	justify-content: space-between;
+}
 
 .name__photo {}
 
-.name__title {
+.name__intro {
+	margin-right: 40px;
+}
+
+
+.name__photo__container {
+	width: 230px;
+	height: 230px;
+	border-radius: 25px;
+	background: linear-gradient(45deg, #20ecc3 33%, #f10fd5 66%, #8AA9D6);
+}
+
+
+.name__photo {}
+
+.name__photo img {
+	padding: 2px;
+	border-radius: 25px;
+	display: inline-block;
+	max-width: 100%;
+}
+
+h1 {
 	font-weight: 700;
 	font-size: 40px;
 	line-height: 94.97%;
 	padding-bottom: 10px;
 }
 
-.name__subtitle {
+h2 {
 	font-size: 28px;
 	line-height: 103.97%;
 	padding-bottom: 36px;
 }
 
-.name__text {
+/*----------NAME END----------*/
+
+.grid__start {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-template-rows: auto auto 1fr 3fr;
+	grid-template-areas: 
+	"skills code"
+	"education code"
+	"language portfolio"
+	"contacts portfolio";
+}
+
+/*----------SKILLS----------*/
+
+.skills {
+	grid-area: skills;
+	width: 300px;
+}
+
+.skills__row {}
+
+.skills__title {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 94.97%;
+	padding-bottom: 36px;
+}
+
+.skills__list {}
+
+.skills__list ul li {
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.skills__list ul li {
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.skills__html {
+	background: url('img/Group2.svg') right no-repeat;
+}
+
+.skills__css {
+	background: url('img/Group1.svg') right no-repeat;
+}
+
+.skills__ps {
+	background: url('img/Group2.svg') right no-repeat;
+}
+
+.skills__figma {
+	background: url('img/Group4.svg') right no-repeat;
+}
+
+.skills__git {
+	background: url('img/Group3.svg') right no-repeat;
+}
+
+.skills__gh {
+	background: url('img/Group3.svg') right no-repeat;
+}
+
+/*----------SKILLS END----------*/
+
+.education {
+	grid-area: education;
+	width: 300px;
+	padding-bottom: 20px;
+}
+
+.education__title {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 94.97%;
+	padding-bottom: 36px;
+}
+
+.education__item {
 	width: 684px;
 	font-size: 18px;
 	line-height: 30px;
+	padding-bottom: 30px;
+}
+
+.education__item:last-child {
+	padding-bottom: 0;
+}
+
+.section__code {
+	grid-area: code;
+	padding-left: 60px;
+}
+
+.code__title {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 94.97%;
+	padding-bottom: 36px;
+}
+
+.code__code {
+	width: 684px;
+	font-size: 18px;
+	line-height: 30px;
+	padding-bottom: 30px;
+}
+
+.portfolio {
+	grid-area: portfolio;
+	padding-left: 60px;
+}
+
+.portfolio__title {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 94.97%;
+	padding-bottom: 36px;
+}
+
+.porfolio__item {}
+
+.portfolio__link {
+	text-align: center;
+	font-size: 18px;
+	line-height: 30px;
+	padding-bottom: 20px;
+}
+
+
+.portfolio__link a:visited {
+	color: black;
+}
+
+.portfolio__link a:hover {
+	background: linear-gradient(45deg, #20ecc3 33%, #f10fd5 66%, #8AA9D6);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	}
+
+
+.portfolio__image img {
+	border: 1px solid #20ecc3;
+	width: 700px;
+	border-radius: 20px;
+
+}
+
+.portfolio__card {
+	padding-bottom: 20px;
+}
+
+.language {
+	grid-area: language;
+
+ }
+.language__title { 
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 94.97%;
+	padding-bottom: 36px;
+}
+.language__text {
+	font-size: 18px;
+	line-height: 30px;
+	padding-bottom: 30px;
+ }
+
+ .contacts { 
+	grid-area: contacts;
+
+ }
+
+.contacts__title {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 94.97%;
+	padding-bottom: 36px;
+ }
+.contacts__text{ 
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.contacts__text ul li a img{ 
+	width: 30px;
 }
