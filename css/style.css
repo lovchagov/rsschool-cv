@@ -96,6 +96,8 @@ scroll-behavior: smooth;
 
 
 body {
+	padding-left: 30px;
+	padding-right: 10px;
 	font-family: 'Inter', sans-serif;
 	background-color: #E5E5E5;
 	background-image: url('img/Shape.svg');
